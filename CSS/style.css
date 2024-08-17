@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: "Share Tech Mono", monospace;
+
+}
+ul, li{
+    list-style: none;
+    padding: 5px 0px;
+
+
+}
+a{
+    text-decoration: none;
+}
+
+
+a, a:visited{
+    color: black;
+}
+
+a:hover{
+    color: rgb(86, 86, 235);
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(238, 238, 238);
+    gap: 50px
+
+}
+#anexos{
+    padding: 40px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.qr{
+    width: 150px;
+    border-radius: 10px;
+}
+
+.subti-azul{
+    padding: 10px 0px;
+    color: cornflowerblue;
+}
+
+h3{
+    padding: 5px 0px;
+    margin-top: 10px;
+    color: black;
+}
+
+ h4, h5{
+    color: rgb(102, 102, 102);
+}
+
+h2{
+    margin: 20px 0px;
+    color:rgb(86, 86, 235);
+}
+
+h2:hover{
+    color: rgba(86, 86, 235, 0.349);
+}
+
+p, li{
+    color: rgb(49, 49, 49);
+}
+
+span{
+    color: rgb(146, 146, 146);
+    font-style: italic;
+}
+
+#formacao, #contatos{
+    margin-top: 60px;
+}
+
+.dados{
+    display: flex;
+    flex-direction: row;
+    gap: 10px 30px;
+    align-items: baseline;
+    padding: 10px;
+}
+
+#perfil h3{
+    text-align: center;
+    padding: 5px;
+}
+
+#perfil h3{
+    color: rgb(255, 255, 255);
+}
+#perfil h5{
+    color: white;
+}
+#perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(86, 86, 235);
+    color: rgb(255, 255, 255);
+    gap: 10px 0px;
+    
+}
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.hab-icon{
+    width: 45px;
+    height: 58px;
+    border-radius: 5px;
+}
+
+.lang-group{
+    display: flex;
+    padding: 10px 0px;
+    flex-direction: row;
+    gap: 20px;
+}
+.contato-item{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 2px;
+    gap: 20px;
+    align-items: center;
+}
+
+.sessao{
+    display: flex;
+    flex-direction: row;
+    gap: 5px 40px;
+}
+
+footer #contatos h4{
+    color: rgb(0, 0, 0);
+
+}
+.conteudo{
+    width: 350px;
+}
+
+@media screen and (max-width:761px) {
+    .sessao{
+        flex-direction:column;
+    }
+    footer, #anexos{
+        flex-direction: column;
+    }
+    .portfolio{
+        display: flex;
+        flex-direction: column;
+    }
+    .dados{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 220px;
+        text-align: center;
+    }
+    .principal{
+        padding-right:10px;
+    }
+   
+}
